@@ -1,0 +1,46 @@
+
+
+<div class="center container">
+      <h5 id='contact-header'> CONTACT US </h1>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <p id="contact_header">Questions, comments, concers? Speak now or forever hold your peace!</p>
+        <%= form_for @contact do |f| %>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <%= f.text_field :name, :class=> "input_box", :id =>"icon_prefix", :placeholder => "* Name", required: true %>
+        </div>
+          <br/>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <%= f.email_field :email, :class=> "input_box", :id => "icon_prefix", :placeholder => "* Email", required: true %>
+        </div>
+          <br/>
+         <div class="input-field col s12">
+          <i class="material-icons prefix">phone</i> 
+          <%= f.text_field :phone_number, :class=> "input_box", :id => "icon_prefix", :placeholder => "* 2158565555", required: true %>
+        </div>
+          <br/>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">chat</i> 
+          <%= f.text_area :message, :id => "textarea1", :class=> "input_box materialize-textarea", :placeholder => "Leave Us a Message!", as: :text %>
+        </div>
+          <br/>
+          <div class="hidden">
+            <%= f.label :nickname, :class => "input_box" %><br>
+            <%= f.text_field :nickname, :class => "input_box", hint: 'leave this field blank' %>
+          </div> 
+
+          <%= f.submit 'Send Message', :id => "download-button" , class: "btn-large waves-effect waves-light salmon lighten-1" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- end container -->
+</div>
+

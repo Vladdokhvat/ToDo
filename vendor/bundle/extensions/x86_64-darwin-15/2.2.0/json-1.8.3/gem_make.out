@@ -1,0 +1,13 @@
+current directory: /Users/Vlad/Desktop/Company/vendor/bundle/gems/json-1.8.3/ext/json
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20160629-31217-173wqpc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Vlad/Desktop/Company/vendor/bundle/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/Vlad/Desktop/Company/vendor/bundle/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/Vlad/Desktop/Company/vendor/bundle/gems/json-1.8.3/ext/json
+make "DESTDIR=" install
