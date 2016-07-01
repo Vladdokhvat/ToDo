@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col s12">
       <div class="row">
-        <p id="contact_header">Questions, comments, concers? Speak now or forever hold your peace!</p>
+        <p id="contact_header">Lets us know about yourself and your business, and if you have any questions, comments, or cencerns!</p>
         <%= form_for @contact do |f| %>
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
@@ -25,7 +25,7 @@
           <br/>
         <div class="input-field col s12">
           <i class="material-icons prefix">chat</i> 
-          <%= f.text_area :message, :id => "textarea1", :class=> "input_box materialize-textarea", :placeholder => "Leave Us a Message!", as: :text %>
+          <%= f.text_area :message, :id => "textarea1", :class=> "input_box materialize-textarea", :placeholder => "Write your message here", as: :text %>
         </div>
           <br/>
           <div class="hidden">
