@@ -2,8 +2,9 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
-Rails.application.config.assets.precompile += %w( style.css )
-Rails.application.config.assets.precompile += %w( font-awesome.css )
+Rails.application.config.assets.precompile += %w( style.css.scss )
+Rails.application.config.assets.precompile += %w( font-awesome.css.scss )
+Rails.application.config.assets.precompile += %w( static_pages.css.scss )
 Rails.application.config.assets.precompile += %w( init.js )
 Rails.application.config.assets.precompile += %w( materialize.js )
 
