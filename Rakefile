@@ -3,8 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rails.application.load_tasks
-
 desc `Pings PING_URL to keep a dyno alive`
       task :dyno_ping do
         require `net/http`
@@ -14,3 +12,6 @@ desc `Pings PING_URL to keep a dyno alive`
           Net::HTTP.get_response(uri)
         end
       end
+
+Rails.application.load_tasks
+
