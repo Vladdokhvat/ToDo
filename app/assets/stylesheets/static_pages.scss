@@ -3005,7 +3005,7 @@ footer.page-footer {
 
 footer.page-footer .footer-copyright {
   overflow: hidden;
-  height: 50px;
+  min-height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
@@ -8379,5 +8379,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-bottom: 50px;
 }
 
+.pt-header{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.pt-text{
+  font-family: 'Raleway', sans-serif;
+}
+.pt-subheader{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pt-list{
+  margin-left: 20px;
+}
+
+.pt-privacy-list{
+  margin-left: 20px;
+}
 
 

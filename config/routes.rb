@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get '/pricing', to: 'static_pages#Pricing', as: 'Pricing'
 
+   get '/privacy-and-terms', to: 'static_pages#privacy-and-terms', as: 'privacy-and-terms'
+
   #contacts
 
 Rails.application.routes.draw do
