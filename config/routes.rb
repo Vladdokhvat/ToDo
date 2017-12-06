@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
   root  'static_pages#Home'
 
-  get '/services', to: 'static_pages#Services', as: 'Services'
+  get '/about', to: 'static_pages#About', as: 'About'
 
-  get '/pricing', to: 'static_pages#Pricing', as: 'Pricing'
-
-   get '/privacy-and-terms', to: 'static_pages#privacy-and-terms', as: 'privacy-and-terms'
 
   #contacts
 

@@ -1,12 +1,13 @@
 
 
 <div class="center container">
+  <img class="todo-logo" src="/gid logo.png"></img>
       <h5 id='contact-header'> CONTACT US! </h1>
 
   <div class="row">
     <div class="col s12">
       <div class="row">
-        <p id="contact_header">Let us know about yourself and your business, and if you have any questions, comments, or concerns!</p>
+        <p id="contact_header">Contact us with any questions, statements or requests that you may have for us and we will answer you as soon as possible!</p>
         <%= form_for @contact do |f| %>
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
@@ -33,7 +34,7 @@
             <%= f.text_field :nickname, :class => "input_box", hint: 'leave this field blank' %>
           </div> 
 
-          <%= f.submit 'Send Message', :id => "download-button" , class: "btn-large waves-effect waves-light salmon lighten-1" %>
+          <%= f.submit 'Send Message', :id => "download-button" , class: "btn-large waves-effect waves-light blue lighten-1" %>
         <% end %>
       </div>
     </div>

@@ -649,7 +649,7 @@
 }
 
 .blue {
-  background-color: #2196F3 !important;
+  background-color: #0089c2 !important;
 }
 
 .blue-text {
@@ -857,11 +857,11 @@
 }
 
 .light-blue.accent-3 {
-  background-color: #00b0ff !important;
+  background-color: #0089c2 !important;
 }
 
 .light-blue-text.text-accent-3 {
-  color: #00b0ff !important;
+  color: #0089c2 !important;
 }
 
 .light-blue.accent-4 {
@@ -869,7 +869,7 @@
 }
 
 .light-blue-text.text-accent-4 {
-  color: #0091ea !important;
+  color: #0089c2 !important;
 }
 
 .cyan {
@@ -2653,7 +2653,7 @@ table {
 }
 
 .hide-on-small-and-down:hover {
-  color: #c96666;
+  color: #0089c2;
 }
 
 td,
@@ -3447,7 +3447,7 @@ input[type=range] + .thumb {
 
 /* This is needed for some mobile phones to display the Google Icon font properly */
 .material-icons {
-  color: #c96666;
+  color: #0089c2;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
      -moz-font-feature-settings: 'liga';
@@ -4437,6 +4437,12 @@ small {
   .flow-text {
     font-size: 1.248rem;
   }
+  .home-banner-list{
+    display: inline;
+  }
+  .home-banner-imgs{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 450px) {
@@ -4772,6 +4778,13 @@ small {
   .toast {
     float: right;
   }
+  .home-banner-list{
+    display: none;
+  }
+  .home-banner-imgs{
+    display: inline;
+  }
+
 }
 
 .tabs {
@@ -8259,31 +8272,31 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 }
 
-.services-margin{
+.about-margin{
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.services-margin img{
+.about-margin img{
   margin-top: 0px auto;
   margin-bottom: 0px auto;
 }
 
-.services{
+.about{
   margin-bottom: 0px;
   padding-bottom: 40px;
 }
 
-.services img{
+.about img{
   margin-top: 0 auto;
   margin-bottom: 0 auto;
 }
 
-.services-img  img {
+.about-img  img {
   max-width: 90%;
 }
 
-.services-header{
+.about-header{
   padding-bottom: 30px;
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
@@ -8292,7 +8305,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .pricing-header{
   margin-top: 0px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 30px;
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
@@ -8315,23 +8328,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-bottom: 30px;
 }
 
-.services-text h5{
+.about-text h5{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
-.services-text p{
+.about-text p{
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   text-align: left;
 }
 
-.services-text ul{
+.about-text ul{
   text-align: left;
   padding-left: 90px;
 }
 
-.services-text ul li{
+.about-text ul li{
   list-style-type: disc;
 }
 
@@ -8401,4 +8414,52 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-left: 20px;
 }
 
+.todo-logo{
+    display: block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 400px;
+}
 
+.about-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+form#add-new-task label{
+    width: 80px;
+    display: inline-block;
+    margin-right: 10px;
+}
+form#add-new-task input{
+    width: 150px;
+    margin-right: 10px;
+}
+form#add-new-task :required {
+    border-color: #11b8ff;
+    -webkit-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -moz-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -o-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -ms-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+}
+
+.home-banner-img{
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.home-banner-img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
